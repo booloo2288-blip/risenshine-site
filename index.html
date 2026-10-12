@@ -3,287 +3,195 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Rise'N Shine</title>
-<meta name="description" content="Un început de zi personalizat, livrat în fiecare dimineață la ora aleasă de tine.">
+<title>Politica de confidențialitate — Rise'N Shine</title>
 <style>
   :root{
-    --bg:#FAF7F2; --surface:#FFFFFF; --text:#1C1B19; --muted:#5E5B54;
-    --accent:#B08D3F; --accent-soft:#F3EADA; --line:#E4DDD1;
+    --bg:#FAF7F2; --surface:#FFFFFF; --text:#20201D; --muted:#5E5B54;
+    --accent:#B08D3F; --line:#E4DDD1;
   }
   @media (prefers-color-scheme: dark){
     :root:not([data-theme="light"]){
-      --bg:#141311; --surface:#1E1D1A; --text:#EFEAE1; --muted:#A9A396;
-      --accent:#D4B463; --accent-soft:#2A2621; --line:#302E29;
+      --bg:#171614; --surface:#1F1E1B; --text:#ECE7DE; --muted:#A9A396;
+      --accent:#D4B463; --line:#33312C;
     }
   }
   *{box-sizing:border-box}
-  html{scroll-behavior:smooth}
   body{
     margin:0; background:var(--bg); color:var(--text);
     font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
-    font-size:17px; line-height:1.65; -webkit-font-smoothing:antialiased;
+    font-size:17px; line-height:1.65;
   }
-  .wrap{max-width:760px; margin:0 auto; padding:0 16px}
-
-  /* language toggle */
-  .langbar{display:flex; justify-content:flex-end; padding:20px 16px 0; max-width:760px; margin:0 auto}
-  .langbtn{
-    background:none; border:1px solid var(--line); color:var(--muted);
-    font:inherit; font-size:14px; padding:6px 13px; border-radius:999px; cursor:pointer;
-  }
-  .langbtn:hover{color:var(--text); border-color:var(--accent)}
-
-  /* hero */
-  header.hero{padding:56px 0 8px; text-align:center}
-  .mark{
-    font-size:13px; letter-spacing:.2em; text-transform:uppercase;
-    color:var(--accent); margin:0 0 20px;
-  }
-  h1{
-    font-size:clamp(34px, 8vw, 54px); line-height:1.08; margin:0 0 18px;
-    font-weight:600; letter-spacing:-.02em;
-  }
-  .tagline{font-size:clamp(18px,4.4vw,21px); color:var(--muted); margin:0 auto; max-width:30ch}
-
-  /* sections */
-  section{padding:52px 0; border-top:1px solid var(--line)}
-  section:first-of-type{border-top:none}
-  h2{font-size:23px; margin:0 0 20px; font-weight:600; letter-spacing:-.01em}
-  p{margin:0 0 16px}
-  p:last-child{margin-bottom:0}
-
-  /* four parts */
-  .grid{display:grid; gap:14px; grid-template-columns:repeat(2,1fr)}
-  @media (max-width:560px){ .grid{grid-template-columns:1fr} }
-  .card{
-    background:var(--surface); border:1px solid var(--line);
-    border-radius:12px; padding:20px;
-  }
-  .card h3{margin:0 0 7px; font-size:16px; font-weight:600}
-  .card p{margin:0; color:var(--muted); font-size:15.5px; line-height:1.55}
-
-  /* list */
-  .plain{list-style:none; padding:0; margin:0}
-  .plain li{
-    padding:14px 0; border-bottom:1px solid var(--line);
-    display:flex; gap:14px; align-items:baseline;
-  }
-  .plain li:last-child{border-bottom:none}
-  .plain b{flex:0 0 auto; font-weight:600}
-  .plain span{color:var(--muted); font-size:16px}
-  @media (max-width:560px){ .plain li{flex-direction:column; gap:3px} }
-
-  /* price */
-  .price{
-    background:var(--accent-soft); border:1px solid var(--line);
-    border-radius:14px; padding:28px 24px; text-align:center;
-  }
-  .price .big{font-size:34px; font-weight:600; display:block; letter-spacing:-.02em}
-  .price .sub{color:var(--muted); font-size:16px; margin-top:6px}
-  .price .note{color:var(--muted); font-size:14.5px; margin-top:18px; line-height:1.5}
-
-  .status{
-    text-align:center; font-size:15.5px; color:var(--muted);
-    border:1px dashed var(--line); border-radius:12px; padding:18px 20px;
-  }
-
-  footer{
-    border-top:1px solid var(--line); padding:36px 0 64px;
-    color:var(--muted); font-size:15px; text-align:center;
-  }
-  footer a{color:var(--accent); text-decoration:none}
-  footer a:hover{text-decoration:underline}
-  footer .row{margin-bottom:10px}
-  footer .row a{margin:0 8px}
-
-  [data-lang]{display:none}
-  [data-lang].on{display:block}
+  .wrap{max-width:720px; margin:0 auto; padding:48px 16px 96px}
+  header{border-bottom:1px solid var(--line); padding-bottom:24px; margin-bottom:32px}
+  .brand{font-size:14px; letter-spacing:.14em; text-transform:uppercase; color:var(--accent); margin:0 0 10px}
+  h1{font-size:30px; line-height:1.2; margin:0 0 10px; font-weight:600}
+  .meta{color:var(--muted); font-size:15px; margin:0}
+  .lang{margin-top:18px; font-size:15px}
+  .lang a{color:var(--accent)}
+  h2{font-size:21px; margin:40px 0 12px; font-weight:600; line-height:1.3}
+  h3{font-size:17px; margin:26px 0 8px; font-weight:600}
+  p,li{color:var(--text)}
+  ul{padding-left:22px}
+  li{margin:6px 0}
+  a{color:var(--accent)}
+  table{width:100%; border-collapse:collapse; margin:16px 0; font-size:15px}
+  th,td{text-align:left; padding:10px 10px; border-bottom:1px solid var(--line); vertical-align:top}
+  th{color:var(--muted); font-weight:600; font-size:13px; letter-spacing:.04em; text-transform:uppercase}
+  .box{background:var(--surface); border:1px solid var(--line); border-radius:10px; padding:18px 20px; margin:24px 0}
+  .box p{margin:0}
+  footer{margin-top:56px; padding-top:24px; border-top:1px solid var(--line); color:var(--muted); font-size:15px}
+  @media (max-width:520px){ body{font-size:16px} h1{font-size:25px} .wrap{padding:32px 16px 72px} }
 </style>
 </head>
 <body>
-
-<div class="langbar">
-  <button class="langbtn" id="toggle" type="button">English</button>
-</div>
-
-<!-- ─────────────────────────── ROMÂNĂ ─────────────────────────── -->
-<div data-lang="ro" class="on">
 <div class="wrap">
 
-  <header class="hero">
-    <p class="mark">Rise'N Shine</p>
-    <h1>Dimineața care sună&nbsp;ca tine</h1>
-    <p class="tagline">Un început de zi personalizat, livrat la ora pe care o alegi tu.</p>
-  </header>
+<header>
+  <p class="brand">Rise'N Shine</p>
+  <h1>Politica de confidențialitate</h1>
+  <p class="meta">Ultima actualizare: 12 octombrie 2026</p>
+  <p class="lang"><a href="./privacy-en.html">Read this page in English →</a> · <a href="./terms.html">Termeni și condiții</a></p>
+</header>
 
-  <section>
-    <h2>Ce face</h2>
-    <p>În fiecare dimineață, la ora aleasă de tine, primești o notificare. În spatele ei te așteaptă un pachet construit în noaptea aceea, pentru ziua aceea, pe baza a ceea ce i-ai spus aplicației despre tine.</p>
-    <p>Nu cauți nimic. Nu alegi nimic. Totul e deja acolo când deschizi ochii.</p>
-  </section>
+<p>Rise'N Shine este o aplicație care îți livrează în fiecare dimineață, la ora aleasă de tine, un pachet personalizat: un mesaj motivațional, o imagine, o recomandare muzicală și vremea din orașul tău.</p>
 
-  <section>
-    <h2>Dimineața ta, în patru părți</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>Un gând al zilei</h3>
-        <p>Scris pentru tine, în tonul pe care l-ai ales — calm, direct sau energic. Nu un citat luat de pe internet.</p>
-      </div>
-      <div class="card">
-        <h3>O imagine</h3>
-        <p>Potrivită cu starea dimineții și cu felul în care îți place să începi.</p>
-      </div>
-      <div class="card">
-        <h3>O melodie</h3>
-        <p>Din genurile tale, alta în fiecare zi, deschisă direct în Spotify sau YouTube Music.</p>
-      </div>
-      <div class="card">
-        <h3>Vremea de azi</h3>
-        <p>Temperatura, cerul, probabilitatea de ploaie — pentru orașul tău, nu pentru capitală.</p>
-      </div>
-    </div>
-  </section>
+<p>Ca să facă asta, aplicația are nevoie de câteva informații despre tine. Documentul acesta explică exact care sunt, de ce sunt necesare, cui ajung și ce poți cere oricând să se întâmple cu ele.</p>
 
-  <section>
-    <h2>Și câteva lucruri care nu încap în patru cutii</h2>
-    <ul class="plain">
-      <li><b>Voce</b><span>Dimineața ta citită cu voce tare, în română, cât îți pregătești cafeaua.</span></li>
-      <li><b>Practici scurte</b><span>Respirație, întindere, o pauză de mișcare de un minut. Se pot sări fără nicio consecință.</span></li>
-      <li><b>Reflecția săptămânii</b><span>O dată pe săptămână, o observație despre cum ți-au fost dimineţile. O păstrezi în jurnal sau o lași să treacă.</span></li>
-      <li><b>Jurnal</b><span>Ce alegi să păstrezi rămâne al tău, într-un singur loc.</span></li>
-    </ul>
-  </section>
+<h2>1. Cine răspunde pentru datele tale</h2>
 
-  <section>
-    <h2>Pentru cine</h2>
-    <p>Pentru oamenii care își încep ziua grăbit și ar vrea ca primele cinci minute să fie ale lor. Fără contoare de zile consecutive, fără scoruri, fără vinovăție dacă într-o dimineață nu deschizi aplicația.</p>
-    <p>Dacă o funcționalitate face dimineața să pară mai aglomerată, nu are ce căuta aici.</p>
-  </section>
+<p>Operatorul de date, în sensul Regulamentului General privind Protecția Datelor (GDPR), este:</p>
 
-  <section>
-    <div class="price">
-      <span class="big">10 zile gratuit</span>
-      <div class="sub">apoi 6,99 € pe lună</div>
-      <div class="note">Fără card în primele 10 zile de probă. Anulezi oricând, din Google Play, și nu se percepe nimic.</div>
-    </div>
-  </section>
+<ul>
+  <li><strong>Gheorghe Albulescu</strong>, persoană fizică, România</li>
+  <li>Contact: <a href="mailto:risenshine.ro@gmail.com">risenshine.ro@gmail.com</a></li>
+</ul>
 
-  <section>
-    <div class="status">Rise'N Shine este în testare finală pe Android. Lansarea pe Google Play urmează în curând.</div>
-  </section>
+<p>Rise'N Shine este dezvoltată și operată individual. La orice întrebare legată de datele tale răspunde aceeași persoană care scrie aplicația.</p>
 
-  <footer>
-    <div class="row">
-      <a href="https://booloo2288-blip.github.io/risenshine-privacy/">Politica de confidențialitate</a> ·
-      <a href="https://booloo2288-blip.github.io/risenshine-privacy/terms.html">Termeni și condiții</a>
-    </div>
-    <div class="row"><a href="mailto:risenshine.ro@gmail.com">risenshine.ro@gmail.com</a></div>
-    <div>Rise'N Shine · Gheorghe Albulescu, România</div>
-  </footer>
+<h2>2. Ce date colectăm</h2>
 
-</div>
+<h3>2.1 Date de cont</h3>
+<ul>
+  <li>Adresa de e-mail și parola, necesare pentru autentificare. Parola este stocată criptat și nu poate fi citită de nimeni, nici de noi.</li>
+  <li>Numele tău, dacă alegi să-l introduci. Este folosit ca să ți se adreseze aplicația pe nume.</li>
+</ul>
+
+<h3>2.2 Preferințele pe care ni le spui</h3>
+<ul>
+  <li>Tonul pe care îl preferi, interesele tale, genurile muzicale</li>
+  <li>Orașul, pentru vreme</li>
+  <li>Ora de trezire, zilele active, formatul orei, limba</li>
+  <li>Genul, dacă alegi să-l completezi — folosit doar pentru a-ți arăta clipurile de exerciții potrivite. Poți să nu răspunzi; aplicația funcționează identic.</li>
+</ul>
+
+<h3>2.3 Date generate prin folosirea aplicației</h3>
+<ul>
+  <li>Datele sesiunilor de dimineață: ziua, durata, dacă ai ascultat vocea, dacă ai parcurs sesiunea până la capăt</li>
+  <li>Conținutul generat pentru tine: motto-ul zilei, reflecțiile săptămânale și însemnările pe care alegi să le păstrezi în jurnal</li>
+  <li>Evenimente tehnice de utilizare: ce ecrane s-au deschis, dacă o generare a reușit sau a eșuat, platforma și versiunea aplicației. Nu conțin numele, e-mailul sau adresa ta IP, dar sunt legate de identificatorul contului tău, pentru ca retenția și conversia să poată fi măsurate pe persoane, nu pe sesiuni izolate.</li>
+</ul>
+
+<h3>2.4 Notificări</h3>
+<p>Dacă accepți notificările, dispozitivul tău primește un identificator tehnic de notificare (un „token"). Este folosit exclusiv pentru a-ți trimite notificarea de dimineață la ora aleasă de tine.</p>
+
+<h3>2.5 Ce NU colectăm</h3>
+<div class="box">
+<p><strong>Nu colectăm date de sănătate.</strong> Aplicația nu citește somnul, pașii, pulsul sau orice altă informație din Health Connect ori din alte aplicații de sănătate. Nu cere permisiuni pentru asta.<br><br>
+<strong>Nu colectăm locația GPS.</strong> Pentru vreme folosim doar numele orașului pe care îl introduci tu.<br><br>
+<strong>Nu citim conturile tale de pe rețelele sociale</strong> și nu preluăm nicio postare.<br><br>
+<strong>Nu vindem datele tale</strong> nimănui, niciodată, sub nicio formă.</p>
 </div>
 
-<!-- ─────────────────────────── ENGLISH ─────────────────────────── -->
-<div data-lang="en">
-<div class="wrap">
+<h2>3. De ce prelucrăm aceste date — temeiul legal</h2>
 
-  <header class="hero">
-    <p class="mark">Rise'N Shine</p>
-    <h1>A morning that sounds&nbsp;like you</h1>
-    <p class="tagline">A personalised start to the day, delivered at the hour you choose.</p>
-  </header>
+<table>
+  <tr><th>Scop</th><th>Date folosite</th><th>Temei legal (GDPR)</th></tr>
+  <tr><td>Crearea și administrarea contului</td><td>E-mail, parolă, nume</td><td>Executarea contractului, Art. 6(1)(b)</td></tr>
+  <tr><td>Generarea pachetului zilnic personalizat</td><td>Preferințe, oraș, istoricul sesiunilor</td><td>Executarea contractului, Art. 6(1)(b)</td></tr>
+  <tr><td>Trimiterea notificării de dimineață</td><td>Token de notificare, ora aleasă</td><td>Consimțământ, Art. 6(1)(a)</td></tr>
+  <tr><td>Administrarea abonamentului</td><td>Starea abonamentului, identificator de cont</td><td>Executarea contractului, Art. 6(1)(b)</td></tr>
+  <tr><td>Îmbunătățirea aplicației</td><td>Evenimente tehnice, legate de identificatorul contului</td><td>Interes legitim, Art. 6(1)(f)</td></tr>
+</table>
 
-  <section>
-    <h2>What it does</h2>
-    <p>Every morning, at the hour you choose, you get a notification. Behind it waits a package built that night, for that day, from what you told the app about yourself.</p>
-    <p>You search for nothing. You choose nothing. It is already there when you open your eyes.</p>
-  </section>
+<p>Consimțământul pentru notificări poate fi retras oricând, din setările telefonului sau din aplicație. Retragerea nu afectează restul funcționării.</p>
 
-  <section>
-    <h2>Your morning, in four parts</h2>
-    <div class="grid">
-      <div class="card">
-        <h3>A thought for the day</h3>
-        <p>Written for you, in the tone you picked — calm, direct or energetic. Not a quote lifted off the internet.</p>
-      </div>
-      <div class="card">
-        <h3>An image</h3>
-        <p>Matched to the mood of the morning and to the way you like to begin.</p>
-      </div>
-      <div class="card">
-        <h3>A track</h3>
-        <p>From your own genres, different every day, opening straight into Spotify or YouTube Music.</p>
-      </div>
-      <div class="card">
-        <h3>Today's weather</h3>
-        <p>Temperature, sky, chance of rain — for your town, not for the capital.</p>
-      </div>
-    </div>
-  </section>
+<h2>4. Cui ajung datele tale</h2>
 
-  <section>
-    <h2>And a few things that don't fit in four boxes</h2>
-    <ul class="plain">
-      <li><b>Voice</b><span>Your morning read aloud while you make the coffee.</span></li>
-      <li><b>Short practices</b><span>Breathing, a stretch, a one-minute movement break. Skippable with no consequence.</span></li>
-      <li><b>Weekly reflection</b><span>Once a week, one observation about how your mornings have been going. Keep it in the journal, or let it pass.</span></li>
-      <li><b>Journal</b><span>What you choose to keep stays yours, in one place.</span></li>
-    </ul>
-  </section>
+<p>Pentru ca aplicația să funcționeze, unele date trec prin servicii externe. Fiecare primește strictul necesar, nimic în plus.</p>
 
-  <section>
-    <h2>Who it is for</h2>
-    <p>For people whose day starts in a hurry and who would like the first five minutes to be theirs. No streak counters, no scores, no guilt if one morning you don't open the app.</p>
-    <p>If a feature makes the morning feel more crowded, it does not belong here.</p>
-  </section>
+<table>
+  <tr><th>Serviciu</th><th>Ce primește</th><th>Pentru ce</th></tr>
+  <tr><td><strong>Supabase</strong></td><td>Contul și toate datele descrise mai sus</td><td>Baza de date, autentificarea și stocarea fișierelor</td></tr>
+  <tr><td><strong>OpenAI</strong></td><td>Prenumele, preferințele și contextul zilei</td><td>Generarea mesajului motivațional și a reflecțiilor</td></tr>
+  <tr><td><strong>ElevenLabs</strong></td><td>Textul care urmează să fie citit cu voce tare</td><td>Transformarea textului în audio</td></tr>
+  <tr><td><strong>Open-Meteo</strong></td><td>Numele orașului</td><td>Prognoza meteo. Nu primește niciun identificator al tău.</td></tr>
+  <tr><td><strong>RevenueCat</strong> și <strong>Google Play Billing</strong></td><td>Un identificator de cont și starea abonamentului</td><td>Verificarea abonamentului. Datele cardului nu trec niciodată prin aplicație.</td></tr>
+  <tr><td><strong>Expo Push</strong> și <strong>Google FCM</strong></td><td>Token-ul de notificare</td><td>Livrarea notificării de dimineață</td></tr>
+</table>
 
-  <section>
-    <div class="price">
-      <span class="big">10 days free</span>
-      <div class="sub">then €6.99 per month</div>
-      <div class="note">No card needed for the 10-day trial. Cancel any time from Google Play, and nothing is charged.</div>
-    </div>
-  </section>
+<p><strong>Spotify și YouTube Music:</strong> aplicația deschide linkuri către ele atunci când apeși pe o melodie. Nu le trimitem nicio informație despre tine. Ce se întâmplă după ce ai ajuns acolo intră sub politicile lor de confidențialitate.</p>
 
-  <section>
-    <div class="status">Rise'N Shine is in final testing on Android. The Google Play launch is coming soon.</div>
-  </section>
+<h3>Unde sunt stocate datele</h3>
+<p><strong>Contul tău și toate datele asociate sunt stocate în Uniunea Europeană.</strong> Baza de date și fișierele sunt găzduite de Supabase în regiunea Irlanda (eu-west-1).</p>
 
-  <footer>
-    <div class="row">
-      <a href="https://booloo2288-blip.github.io/risenshine-privacy/privacy-en.html">Privacy Policy</a> ·
-      <a href="https://booloo2288-blip.github.io/risenshine-privacy/terms-en.html">Terms &amp; Conditions</a>
-    </div>
-    <div class="row"><a href="mailto:risenshine.ro@gmail.com">risenshine.ro@gmail.com</a></div>
-    <div>Rise'N Shine · Gheorghe Albulescu, Romania</div>
-  </footer>
+<h3>Transferuri în afara Spațiului Economic European</h3>
+<p>Unii dintre furnizorii de mai sus își au sediul în Statele Unite. Transferurile de date către ei se realizează pe baza clauzelor contractuale standard aprobate de Comisia Europeană sau a unui alt mecanism de transfer prevăzut de GDPR, conform termenilor fiecărui furnizor.</p>
+
+<h2>5. Cât timp păstrăm datele</h2>
+
+<ul>
+  <li><strong>Cât timp contul tău este activ</strong> — păstrăm datele ca să îți putem livra dimineața și să păstrăm continuitatea profilului tău.</li>
+  <li><strong>După ștergerea contului</strong> — datele cu caracter personal sunt șterse definitiv în cel mult <strong>30 de zile</strong>.</li>
+  <li><strong>Evenimentele tehnice</strong> sunt dezlegate de contul tău la ștergere și pot fi păstrate mai mult, sub formă agregată, pentru statistici.</li>
+</ul>
+
+<h2>6. Drepturile tale</h2>
+
+<p>Conform GDPR, ai următoarele drepturi, și le poți exercita trimițând un e-mail la <a href="mailto:risenshine.ro@gmail.com">risenshine.ro@gmail.com</a>:</p>
+
+<ul>
+  <li><strong>Acces</strong> — să afli ce date avem despre tine</li>
+  <li><strong>Rectificare</strong> — să corectezi orice informație greșită</li>
+  <li><strong>Ștergere</strong> — să ceri eliminarea contului și a datelor. Se poate face și direct din aplicație, din Setări.</li>
+  <li><strong>Portabilitate</strong> — să primești datele tale într-un format pe care îl poți folosi în altă parte</li>
+  <li><strong>Opoziție și restricționare</strong> — să te opui anumitor prelucrări sau să ceri limitarea lor</li>
+  <li><strong>Retragerea consimțământului</strong> — oricând, fără să fie nevoie de o justificare</li>
+</ul>
+
+<p>Răspundem în cel mult 30 de zile. Dacă nu ești mulțumit de răspuns, ai dreptul să depui o plângere la <strong>Autoritatea Națională de Supraveghere a Prelucrării Datelor cu Caracter Personal (ANSPDCP)</strong>, <a href="https://www.dataprotection.ro">www.dataprotection.ro</a>.</p>
+
+<h2>7. Securitate</h2>
+
+<ul>
+  <li>Toată comunicarea dintre aplicație și servere este criptată (HTTPS)</li>
+  <li>Parolele sunt stocate criptat, printr-o funcție ireversibilă</li>
+  <li>Accesul la date este restricționat la nivel de rând, astfel încât un cont să nu poată citi datele altui cont</li>
+  <li>Cheile de acces către serviciile externe sunt păstrate pe server și nu sunt incluse niciodată în aplicația instalată pe telefon</li>
+</ul>
+
+<p>Niciun sistem nu este absolut sigur. Dacă apare o breșă care îți pune în pericol datele, te anunțăm și notificăm autoritatea competentă în termenele prevăzute de lege.</p>
+
+<h2>8. Vârsta minimă</h2>
+
+<p>Rise'N Shine este destinată persoanelor de <strong>16 ani și peste</strong>. Nu colectăm cu bună știință date de la copii sub această vârstă. Dacă afli că un minor sub 16 ani și-a creat un cont, scrie-ne și îl ștergem.</p>
+
+<h2>9. Conținut generat automat</h2>
+
+<p>Mesajele motivaționale, reflecțiile și recomandările sunt generate de un model de inteligență artificială, pe baza preferințelor tale. Sunt destinate inspirației și bunăstării zilnice. <strong>Nu constituie sfat medical, psihologic sau terapeutic</strong> și nu înlocuiesc consultarea unui specialist.</p>
+
+<h2>10. Modificări ale acestei politici</h2>
+
+<p>Când aplicația se schimbă, se schimbă și documentul acesta. Data de la începutul paginii arată mereu ultima actualizare. Dacă apare o modificare importantă — de exemplu o categorie nouă de date — te anunțăm în aplicație înainte să intre în vigoare.</p>
+
+<h2>11. Contact</h2>
+
+<p>Pentru orice întrebare legată de datele tale: <a href="mailto:risenshine.ro@gmail.com">risenshine.ro@gmail.com</a></p>
+
+<footer>
+  <p>Rise'N Shine · Operator: Gheorghe Albulescu, România · Ultima actualizare: 12 octombrie 2026</p>
+  <p><a href="./privacy-en.html">English</a> · <a href="./terms.html">Termeni și condiții</a> · <a href="./terms-en.html">Terms (EN)</a></p>
+</footer>
 
 </div>
-</div>
-
-<script>
-  (function () {
-    var btn = document.getElementById('toggle');
-    var ro = document.querySelector('[data-lang="ro"]');
-    var en = document.querySelector('[data-lang="en"]');
-    var isRo = true;
-    // Deschide direct în engleză pentru un browser care nu e în română.
-    try {
-      var l = (navigator.language || '').toLowerCase();
-      if (l && l.indexOf('ro') !== 0) { isRo = false; }
-    } catch (e) {}
-    function apply() {
-      ro.classList.toggle('on', isRo);
-      en.classList.toggle('on', !isRo);
-      btn.textContent = isRo ? 'English' : 'Română';
-      document.documentElement.lang = isRo ? 'ro' : 'en';
-      document.title = 'Rise’N Shine';
-    }
-    btn.addEventListener('click', function () { isRo = !isRo; apply(); });
-    apply();
-  })();
-</script>
-
 </body>
 </html>
